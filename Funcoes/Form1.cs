@@ -55,12 +55,26 @@ namespace Funcoes
 
         private void gerarnumero(object sender, EventArgs e)
         {
+            if(ultimonumero == 0)
+            {
+
+            }
+
             txtresult.Text = txtresult.Text + (sender as Button).Text;
+            ultimonumero = Convert.ToDouble(txtresult.Text);
         }
 
         private void operadores(object sender, EventArgs e)
         {
             txtresult.Text = txtresult.Text + (sender as Button).Text;
+        }
+
+        private void btresult_Click(object sender, EventArgs e)
+        {
+            ultimonumero = Convert.ToDouble(txtresult.Text);
+            Calcular();
+            operador = "+";
+            total = 0;
         }
     }
 }

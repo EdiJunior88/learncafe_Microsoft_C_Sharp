@@ -41,7 +41,7 @@
             this.bt2 = new System.Windows.Forms.Button();
             this.bt1 = new System.Windows.Forms.Button();
             this.btmult = new System.Windows.Forms.Button();
-            this.btigual = new System.Windows.Forms.Button();
+            this.btresult = new System.Windows.Forms.Button();
             this.bt0 = new System.Windows.Forms.Button();
             this.btlimpar = new System.Windows.Forms.Button();
             this.txtresult = new System.Windows.Forms.MaskedTextBox();
@@ -177,14 +177,15 @@
             this.btmult.UseVisualStyleBackColor = true;
             this.btmult.Click += new System.EventHandler(this.operadores);
             // 
-            // btigual
+            // btresult
             // 
-            this.btigual.Location = new System.Drawing.Point(209, 237);
-            this.btigual.Name = "btigual";
-            this.btigual.Size = new System.Drawing.Size(75, 34);
-            this.btigual.TabIndex = 14;
-            this.btigual.Text = "=";
-            this.btigual.UseVisualStyleBackColor = true;
+            this.btresult.Location = new System.Drawing.Point(209, 237);
+            this.btresult.Name = "btresult";
+            this.btresult.Size = new System.Drawing.Size(75, 34);
+            this.btresult.TabIndex = 14;
+            this.btresult.Text = "=";
+            this.btresult.UseVisualStyleBackColor = true;
+            this.btresult.Click += new System.EventHandler(this.btresult_Click);
             // 
             // bt0
             // 
@@ -220,7 +221,7 @@
             this.ClientSize = new System.Drawing.Size(375, 313);
             this.Controls.Add(this.txtresult);
             this.Controls.Add(this.btmult);
-            this.Controls.Add(this.btigual);
+            this.Controls.Add(this.btresult);
             this.Controls.Add(this.bt0);
             this.Controls.Add(this.btlimpar);
             this.Controls.Add(this.btdiv);
@@ -257,7 +258,7 @@
         private System.Windows.Forms.Button bt2;
         private System.Windows.Forms.Button bt1;
         private System.Windows.Forms.Button btmult;
-        private System.Windows.Forms.Button btigual;
+        private System.Windows.Forms.Button btresult;
         private System.Windows.Forms.Button bt0;
         private System.Windows.Forms.Button btlimpar;
         private System.Windows.Forms.MaskedTextBox txtresult;
