@@ -23,6 +23,25 @@ namespace Funcoes
             operador = "+";
             txtresult.Text = "";
         }
+
+        private void Calcular()
+        {
+            switch (operador)
+            {
+                case "+": total = total + ultimonumero;
+                    break;
+                case "-": total = total + ultimonumero;
+                    break;
+                case "/": total = total + ultimonumero;
+                    break;
+                case "x": total = total + ultimonumero;
+                    break;
+            }
+
+            ultimonumero = 0;
+            txtresult.Text = total.ToString();
+        }
+
         public Form1()
         {
             InitializeComponent();
